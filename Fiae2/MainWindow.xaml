@@ -1,0 +1,41 @@
+﻿<Window x:Class="Fiae2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fiae2"
+        mc:Ignorable="d"
+        Title="FiAe2" Height="450" Width="800"
+        KeyUp="Window_KeyUp"
+        Loaded="Window_Loaded">
+
+    <DockPanel>
+        <!-- <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Datei">
+                <MenuItem Header="Daten importieren" />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+        </Menu>
+        -->
+
+        <Grid ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" MinHeight="50" />
+                <RowDefinition Height="1*" MinHeight="50" />
+            </Grid.RowDefinitions>
+            <TextBlock Margin="20" TextWrapping="Wrap" Grid.Row="0" Name="questionText">Daten werden geladen..</TextBlock>
+            <StackPanel Margin="20,5,20,5" Grid.Row="1">
+                <CheckBox Name="answer1" >1. Klick mich hart!</CheckBox>
+                <CheckBox Name="answer2">2. Welches ist eure Lieblingsfarbe? Blau - nein Gelb!</CheckBox>
+                <CheckBox Name="answer3">3. Wer über die Brücke des Todes will gehn, der muss dreimal Rede und Antwort stehn.</CheckBox>
+                <CheckBox Name="answer4">4. abc</CheckBox>
+                <CheckBox Name="answer5">5. asdflkj</CheckBox>
+                <CheckBox Name="answer6">6.</CheckBox>
+                <CheckBox Name="answer7">7.</CheckBox>
+                <CheckBox Name="answer8">8.</CheckBox>
+                <Button Name="btn_check" Grid.Row="1" Height="40" Width="150" HorizontalAlignment="Left" Margin="0 20">Prüfen</Button>
+            </StackPanel>
+        </Grid>
+    </DockPanel>
+</Window>
